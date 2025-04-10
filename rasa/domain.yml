@@ -1,0 +1,6 @@
+responses:
+  utter_default:
+    - text: "Sorry, I didn’t get that. Want to try again?"
+
+actions:
+  - utter_default

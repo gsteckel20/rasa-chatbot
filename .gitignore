@@ -1,0 +1,51 @@
+# Python standard
+__pycache__/
+*.py[cod]
+*.pyo
+*.pkl
+*.log
+*.sqlite3
+*.db
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code
+.vscode/
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# Scrapy
+.scrapy/
+
+# Hugging Face Transformers cache
+~/.cache/huggingface/
+~/.cache/torch/
+.cache/
+*.ckpt
+
+# Datasets & model dumps
+*.pt
+*.pth
+*.h5
+*.joblib
+*.pkl
+*.onnx
+
+# PySpark JARs
+*.jar
+
+# Model outputs
+checkpoints/
+runs/
+logs/
+saved_models/
+
+# OS-specific
+.DS_Store
+Thumbs.db
