@@ -1,0 +1,744 @@
+version: '3.1'
+nlu:
+- intent: ask_academic_program
+  examples: '- How many total credit hours are required for a Computer Science degree
+    at UGA?
+
+    - What are the entrance requirements for the Computer Science major at UGA?
+
+    - What is the minimum grade required for major courses?
+
+    - How many upper-division credit hours are required?
+
+    - What are the Foundation Courses required for Computer Science at UGA?
+
+    - What science courses are required for the Computer Science major?
+
+    - What is the required Quantitative Reasoning course?
+
+    - What courses are required in Area VI for Computer Science?
+
+    - What are the major required courses for the Computer Science degree?
+
+    - What are the major-related electives?
+
+    - What if I take a course that fulfills multiple requirements?
+
+    - What is the difference between Foundation Courses and Major Requirements?
+
+    - What math courses are required for the Computer Science major?
+
+    - Do I need to take a lab science course?
+
+    - What are the Systems Design Group courses?
+
+    - Can major electives and major-related electives overlap?
+
+    - What courses count toward the Major Electives requirement?
+
+    - Can I take CSCI 4900/6900 for major elective credit?
+
+    - What courses count toward the Artificial Intelligence emphasis?
+
+    - What courses count toward the Internet and Information Technology emphasis?
+
+    - What is the required Physical Science and Life Science coursework?
+
+    - What happens if I do not meet the entrance requirements for the Computer Science
+    major?
+
+    - Can I use transfer credits to satisfy Area VI or major requirements?
+
+    - Which courses satisfy the Computing
+
+    - How many hours of upper-division courses do I need overall?
+
+    - What courses satisfy the Algorithms requirement?
+
+    - What are the required courses for the Software Design emphasis?
+
+    - How do I know if a course will count as an elective for my degree?
+
+    - Can major electives and major-related electives overlap?
+
+    - What is the difference between major electives and general electives?
+
+    - What happens if I fail a required Computer Science course?
+
+    - Which courses satisfy the Cybersecurity area of emphasis?
+
+    - Can I double major or pursue a minor with my Computer Science degree?
+
+    - Are there any restrictions on using STAT 2000 or MATH 2260 for major-related
+    electives?
+
+    - What are the required courses in the Systems Design Group?
+
+    - What are the preferred courses for Social Sciences?
+
+    - What is the prerequisite for CSCI 4720?
+
+    - What courses satisfy the Theoretical Computer Science emphasis?
+
+    - Which courses satisfy the Artificial Intelligence (AI) emphasis?
+
+    - What courses count towards the Applied Data Science emphasis?
+
+    - What courses count towards the Internet and Information Technology emphasis?
+
+    - What are the requirements for graduating with a Computer Science degree?
+
+    - Can I take online courses to satisfy major requirements?
+
+    - Are there any restrictions on repeating major courses?
+
+    - Can I double count courses for an emphasis and major electives?
+
+    - Can I substitute another course for a required major course?
+
+    - What happens if I drop below a 2.0 GPA in my major?
+
+    - What are the prerequisites for English 1101?
+
+    - What are the prerequisites for English 1102?
+
+    - What are the honors course options for first-year writing?
+
+    - Are there special topics versions of first-year writing courses?
+
+    - What are the differences between rhetorical and literary analysis in first-year
+    writing courses?
+
+    - Why is the final electronic portfolio important in first-year writing courses?
+
+    - How do English 1101S and service-learning courses differ from regular first-year
+    writing courses?
+
+    - How do first-year writing courses help students develop a strong academic voice?
+
+    - How does technology influence the writing process in first-year writing courses?
+
+    - Why is genre awareness important in first-year writing courses?
+
+    - How many total credit hours are required for a Computer Science degree at UGA?
+
+    - What are the entrance requirements for the Computer Science major at UGA?
+
+    - What is the minimum grade required for major courses?
+
+    - How many upper-division credit hours are required?
+
+    - What are the Foundation Courses required for Computer Science at UGA?
+
+    - What science courses are required for the Computer Science major?
+
+    - What is the required Quantitative Reasoning course?
+
+    - What courses are required in Area VI for Computer Science?
+
+    - What are the major required courses for the Computer Science degree?
+
+    - What are the major-related electives?
+
+    - What if I take a course that fulfills multiple requirements?
+
+    - What is the difference between Foundation Courses and Major Requirements?
+
+    - What math courses are required for the Computer Science major?
+
+    - Do I need to take a lab science course?
+
+    - What are the Systems Design Group courses?
+
+    - Can major electives and major-related electives overlap?
+
+    - What courses count toward the Major Electives requirement?
+
+    - Can I take CSCI 4900/6900 for major elective credit?
+
+    - What courses count toward the Artificial Intelligence emphasis?
+
+    - What courses count toward the Internet and Information Technology emphasis?
+
+    - What is the required Physical Science and Life Science coursework?
+
+    - What happens if I do not meet the entrance requirements for the Computer Science
+    major?
+
+    - Can I use transfer credits to satisfy Area VI or major requirements?
+
+    - Which courses satisfy the Computing
+
+    - How many hours of upper-division courses do I need overall?
+
+    - What courses satisfy the Algorithms requirement?
+
+    - What are the required courses for the Software Design emphasis?
+
+    - How do I know if a course will count as an elective for my degree?
+
+    - Can major electives and major-related electives overlap?
+
+    - What is the difference between major electives and general electives?
+
+    - What happens if I fail a required Computer Science course?
+
+    - Which courses satisfy the Cybersecurity area of emphasis?
+
+    - Can I double major or pursue a minor with my Computer Science degree?
+
+    - Are there any restrictions on using STAT 2000 or MATH 2260 for major-related
+    electives?
+
+    - What are the required courses in the Systems Design Group?
+
+    - What are the preferred courses for Social Sciences?
+
+    - What is the prerequisite for CSCI 4720?
+
+    - What courses satisfy the Theoretical Computer Science emphasis?
+
+    - Which courses satisfy the Artificial Intelligence (AI) emphasis?
+
+    - What courses count towards the Applied Data Science emphasis?
+
+    - What courses count towards the Internet and Information Technology emphasis?
+
+    - What are the requirements for graduating with a Computer Science degree?
+
+    - Can I take online courses to satisfy major requirements?
+
+    - Are there any restrictions on repeating major courses?
+
+    - Can I double count courses for an emphasis and major electives?
+
+    - Can I substitute another course for a required major course?
+
+    - What happens if I drop below a 2.0 GPA in my major?
+
+    - What are the prerequisites for English 1101?
+
+    - What are the prerequisites for English 1102?
+
+    - What are the honors course options for first-year writing?
+
+    - Are there special topics versions of first-year writing courses?
+
+    - What are the differences between rhetorical and literary analysis in first-year
+    writing courses?
+
+    - Why is the final electronic portfolio important in first-year writing courses?
+
+    - How do English 1101S and service-learning courses differ from regular first-year
+    writing courses?
+
+    - How do first-year writing courses help students develop a strong academic voice?
+
+    - How does technology influence the writing process in first-year writing courses?
+
+    - Why is genre awareness important in first-year writing courses?
+
+    - How many total credit hours are required for a Computer Science degree at UGA?
+
+    - What are the entrance requirements for the Computer Science major at UGA?
+
+    - What is the minimum grade required for major courses?
+
+    - How many upper-division credit hours are required?
+
+    - What are the Foundation Courses required for Computer Science at UGA?
+
+    - What science courses are required for the Computer Science major?
+
+    - What is the required Quantitative Reasoning course?
+
+    - What courses are required in Area VI for Computer Science?
+
+    - What are the major required courses for the Computer Science degree?
+
+    - What are the major-related electives?
+
+    - What if I take a course that fulfills multiple requirements?
+
+    - What is the difference between Foundation Courses and Major Requirements?
+
+    - What math courses are required for the Computer Science major?
+
+    - Do I need to take a lab science course?
+
+    - What are the Systems Design Group courses?
+
+    - Can major electives and major-related electives overlap?
+
+    - What courses count toward the Major Electives requirement?
+
+    - Can I take CSCI 4900/6900 for major elective credit?
+
+    - What courses count toward the Artificial Intelligence emphasis?
+
+    - What courses count toward the Internet and Information Technology emphasis?
+
+    - What is the required Physical Science and Life Science coursework?
+
+    - What happens if I do not meet the entrance requirements for the Computer Science
+    major?
+
+    - Can I use transfer credits to satisfy Area VI or major requirements?
+
+    - Which courses satisfy the Computing
+
+    - How many hours of upper-division courses do I need overall?
+
+    - What courses satisfy the Algorithms requirement?
+
+    - What are the required courses for the Software Design emphasis?
+
+    - How do I know if a course will count as an elective for my degree?
+
+    - Can major electives and major-related electives overlap?
+
+    - What is the difference between major electives and general electives?
+
+    - What happens if I fail a required Computer Science course?
+
+    - Which courses satisfy the Cybersecurity area of emphasis?
+
+    - Can I double major or pursue a minor with my Computer Science degree?
+
+    - Are there any restrictions on using STAT 2000 or MATH 2260 for major-related
+    electives?
+
+    - What are the required courses in the Systems Design Group?
+
+    - What are the preferred courses for Social Sciences?
+
+    - What is the prerequisite for CSCI 4720?
+
+    - What courses satisfy the Theoretical Computer Science emphasis?
+
+    - Which courses satisfy the Artificial Intelligence (AI) emphasis?
+
+    - What courses count towards the Applied Data Science emphasis?
+
+    - What courses count towards the Internet and Information Technology emphasis?
+
+    - What are the requirements for graduating with a Computer Science degree?
+
+    - Can I take online courses to satisfy major requirements?
+
+    - Are there any restrictions on repeating major courses?
+
+    - Can I double count courses for an emphasis and major electives?
+
+    - Can I substitute another course for a required major course?
+
+    - What happens if I drop below a 2.0 GPA in my major?
+
+    - What are the prerequisites for English 1101?
+
+    - What are the prerequisites for English 1102?
+
+    - What are the honors course options for first-year writing?
+
+    - Are there special topics versions of first-year writing courses?
+
+    - What are the differences between rhetorical and literary analysis in first-year
+    writing courses?
+
+    - Why is the final electronic portfolio important in first-year writing courses?
+
+    - How do English 1101S and service-learning courses differ from regular first-year
+    writing courses?
+
+    - How do first-year writing courses help students develop a strong academic voice?
+
+    - How does technology influence the writing process in first-year writing courses?
+
+    - Why is genre awareness important in first-year writing courses?'
+- intent: ask_general_question
+  examples: '- Do I need to take a foreign language?
+
+    - What are the Social Science requirements?
+
+    - How many Computer Science electives do I need?
+
+    - How many general electives do I need?
+
+    - What areas of emphasis are available in the Computer Science program?
+
+    - What is the minimum GPA requirement for Computer Science students?
+
+    - What happens if I transfer Computer Science credits?
+
+    - How do I fulfill the Computing
+
+    - What are the requirements for the Cybersecurity emphasis?
+
+    - How do I fulfill the Applied Data Science emphasis?
+
+    - How many hours of general electives do I need?
+
+    - Are there any restrictions on the General Electives?
+
+    - What happens if I take STAT 2000 or MATH 2260 to satisfy core requirements?
+
+    - Can I specialize in multiple areas of emphasis?
+
+    - How can I meet the 39 upper-division hour requirement?
+
+    - How do I meet the Georgia and U.S. Constitution requirement?
+
+    - How do I meet the U.S. and Georgia History requirement?
+
+    - Are there any restrictions on CSCI 4900 and CSCI 4950?
+
+    - How many general elective hours must be upper-division?
+
+    - Can I use a foreign language placement test to fulfill the World Languages requirement?
+
+    - Can I take CSCI 3030 online?
+
+    - What are the general elective requirements?
+
+    - Does the 1-hour Physical Education (P.E.) requirement count toward general electives?
+
+    - Does undergraduate research count toward elective credits?
+
+    - Can I graduate with honors in Computer Science?
+
+    - What is English 1101?
+
+    - What are the core goals of English 1101?
+
+    - What writing skills are emphasized in English 1101?
+
+    - What are the requirements for English 1101?
+
+    - What textbooks are required for English 1101?
+
+    - What is English 1102?
+
+    - What are the grading requirements for English 1102?
+
+    - How does English 1102 differ from English 1101?
+
+    - What are the writing goals of English 1102?
+
+    - What are the requirements for English 1102?
+
+    - What textbooks are required for English 1102?
+
+    - What dictionaries are recommended for English 1102?
+
+    - What is the ESOL section of first-year writing?
+
+    - How can students enroll in the ESOL sections of English 1101 and 1102?
+
+    - What is English 1102E?
+
+    - What is English 1101S?
+
+    - How does English 1101 prepare students for academic writing across disciplines?
+
+    - What are the threshold concepts in English 1101
+
+    - What role does peer review play in the English 1101 and 1102 writing process?
+
+    - How does English 1102 develop students ability to engage with literary texts?
+
+    - What citation practices do students learn in English 1101 and 1102?
+
+    - How does English 1101 teach students to recognize the difference between opinion
+    and evidence?
+
+    - What are the benefits of taking an Honors section of English 1102?
+
+    - What are the advantages of taking English 1102E online versus in-person?
+
+    - What types of multimodal projects might students complete in English 1101 or
+    1102?
+
+    - How does first-year writing at UGA help students become adaptable writers?
+
+    - What is the relationship between writing and critical thinking in English 1101
+    and 1102?
+
+    - Do I need to take a foreign language?
+
+    - What are the Social Science requirements?
+
+    - How many Computer Science electives do I need?
+
+    - How many general electives do I need?
+
+    - What areas of emphasis are available in the Computer Science program?
+
+    - What is the minimum GPA requirement for Computer Science students?
+
+    - What happens if I transfer Computer Science credits?
+
+    - How do I fulfill the Computing
+
+    - What are the requirements for the Cybersecurity emphasis?
+
+    - How do I fulfill the Applied Data Science emphasis?
+
+    - How many hours of general electives do I need?
+
+    - Are there any restrictions on the General Electives?
+
+    - What happens if I take STAT 2000 or MATH 2260 to satisfy core requirements?
+
+    - Can I specialize in multiple areas of emphasis?
+
+    - How can I meet the 39 upper-division hour requirement?
+
+    - How do I meet the Georgia and U.S. Constitution requirement?
+
+    - How do I meet the U.S. and Georgia History requirement?
+
+    - Are there any restrictions on CSCI 4900 and CSCI 4950?
+
+    - How many general elective hours must be upper-division?
+
+    - Can I use a foreign language placement test to fulfill the World Languages requirement?
+
+    - Can I take CSCI 3030 online?
+
+    - What are the general elective requirements?
+
+    - Does the 1-hour Physical Education (P.E.) requirement count toward general electives?
+
+    - Does undergraduate research count toward elective credits?
+
+    - Can I graduate with honors in Computer Science?
+
+    - What is English 1101?
+
+    - What are the core goals of English 1101?
+
+    - What writing skills are emphasized in English 1101?
+
+    - What are the requirements for English 1101?
+
+    - What textbooks are required for English 1101?
+
+    - What is English 1102?
+
+    - What are the grading requirements for English 1102?
+
+    - How does English 1102 differ from English 1101?
+
+    - What are the writing goals of English 1102?
+
+    - What are the requirements for English 1102?
+
+    - What textbooks are required for English 1102?
+
+    - What dictionaries are recommended for English 1102?
+
+    - What is the ESOL section of first-year writing?
+
+    - How can students enroll in the ESOL sections of English 1101 and 1102?
+
+    - What is English 1102E?
+
+    - What is English 1101S?
+
+    - How does English 1101 prepare students for academic writing across disciplines?
+
+    - What are the threshold concepts in English 1101
+
+    - What role does peer review play in the English 1101 and 1102 writing process?
+
+    - How does English 1102 develop students ability to engage with literary texts?
+
+    - What citation practices do students learn in English 1101 and 1102?
+
+    - How does English 1101 teach students to recognize the difference between opinion
+    and evidence?
+
+    - What are the benefits of taking an Honors section of English 1102?
+
+    - What are the advantages of taking English 1102E online versus in-person?
+
+    - What types of multimodal projects might students complete in English 1101 or
+    1102?
+
+    - How does first-year writing at UGA help students become adaptable writers?
+
+    - What is the relationship between writing and critical thinking in English 1101
+    and 1102?
+
+    - Do I need to take a foreign language?
+
+    - What are the Social Science requirements?
+
+    - How many Computer Science electives do I need?
+
+    - How many general electives do I need?
+
+    - What areas of emphasis are available in the Computer Science program?
+
+    - What is the minimum GPA requirement for Computer Science students?
+
+    - What happens if I transfer Computer Science credits?
+
+    - How do I fulfill the Computing
+
+    - What are the requirements for the Cybersecurity emphasis?
+
+    - How do I fulfill the Applied Data Science emphasis?
+
+    - How many hours of general electives do I need?
+
+    - Are there any restrictions on the General Electives?
+
+    - What happens if I take STAT 2000 or MATH 2260 to satisfy core requirements?
+
+    - Can I specialize in multiple areas of emphasis?
+
+    - How can I meet the 39 upper-division hour requirement?
+
+    - How do I meet the Georgia and U.S. Constitution requirement?
+
+    - How do I meet the U.S. and Georgia History requirement?
+
+    - Are there any restrictions on CSCI 4900 and CSCI 4950?
+
+    - How many general elective hours must be upper-division?
+
+    - Can I use a foreign language placement test to fulfill the World Languages requirement?
+
+    - Can I take CSCI 3030 online?
+
+    - What are the general elective requirements?
+
+    - Does the 1-hour Physical Education (P.E.) requirement count toward general electives?
+
+    - Does undergraduate research count toward elective credits?
+
+    - Can I graduate with honors in Computer Science?
+
+    - What is English 1101?
+
+    - What are the core goals of English 1101?
+
+    - What writing skills are emphasized in English 1101?
+
+    - What are the requirements for English 1101?
+
+    - What textbooks are required for English 1101?
+
+    - What is English 1102?
+
+    - What are the grading requirements for English 1102?
+
+    - How does English 1102 differ from English 1101?
+
+    - What are the writing goals of English 1102?
+
+    - What are the requirements for English 1102?
+
+    - What textbooks are required for English 1102?
+
+    - What dictionaries are recommended for English 1102?
+
+    - What is the ESOL section of first-year writing?
+
+    - How can students enroll in the ESOL sections of English 1101 and 1102?
+
+    - What is English 1102E?
+
+    - What is English 1101S?
+
+    - How does English 1101 prepare students for academic writing across disciplines?
+
+    - What are the threshold concepts in English 1101
+
+    - What role does peer review play in the English 1101 and 1102 writing process?
+
+    - How does English 1102 develop students ability to engage with literary texts?
+
+    - What citation practices do students learn in English 1101 and 1102?
+
+    - How does English 1101 teach students to recognize the difference between opinion
+    and evidence?
+
+    - What are the benefits of taking an Honors section of English 1102?
+
+    - What are the advantages of taking English 1102E online versus in-person?
+
+    - What types of multimodal projects might students complete in English 1101 or
+    1102?
+
+    - How does first-year writing at UGA help students become adaptable writers?
+
+    - What is the relationship between writing and critical thinking in English 1101
+    and 1102?'
+- intent: highlight_achievement
+  examples: '- Do I need a team-based course?
+
+    - What is the team-based course requirement?
+
+    - How can I fulfill the teamwork requirement?
+
+    - What challenges do students face in transitioning from English 1101 to English
+    1102?
+
+    - How do first-year writing courses challenge students previous notions about
+    writing?
+
+    - Do I need a team-based course?
+
+    - What is the team-based course requirement?
+
+    - How can I fulfill the teamwork requirement?
+
+    - What challenges do students face in transitioning from English 1101 to English
+    1102?
+
+    - How do first-year writing courses challenge students previous notions about
+    writing?
+
+    - Do I need a team-based course?
+
+    - What is the team-based course requirement?
+
+    - How can I fulfill the teamwork requirement?
+
+    - What challenges do students face in transitioning from English 1101 to English
+    1102?
+
+    - How do first-year writing courses challenge students previous notions about
+    writing?'
+- intent: ask_admissions
+  examples: '- What are the Application Design Group courses?
+
+    - What are the required courses in the Application Design Group?
+
+    - What are the Application Design Group courses?
+
+    - What are the required courses in the Application Design Group?
+
+    - What are the Application Design Group courses?
+
+    - What are the required courses in the Application Design Group?'
+- intent: ask_undergraduate_program
+  examples: '- What are the preferred courses for Physical Sciences in the Core Curriculum?
+
+    - What are the preferred courses for Life Sciences in the Core Curriculum?
+
+    - What are the preferred courses for Physical Sciences in the Core Curriculum?
+
+    - What are the preferred courses for Life Sciences in the Core Curriculum?
+
+    - What are the preferred courses for Physical Sciences in the Core Curriculum?
+
+    - What are the preferred courses for Life Sciences in the Core Curriculum?'
+- intent: student_opportunities
+  examples: '- Are internships required for the Computer Science degree?
+
+    - Are internships required for the Computer Science degree?
+
+    - Are internships required for the Computer Science degree?'

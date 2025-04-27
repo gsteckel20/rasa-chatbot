@@ -1,7 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import pandas as pd
 import glob
-import nltk
 from nltk.tokenize import sent_tokenize
 
 model_name = "allenai/t5-small-squad2-question-generation"
@@ -32,15 +31,16 @@ for f in csv_files:
     for _, row in fdf.iterrows():
         sentences = chunk_text(row["cleaned_text"])
         for sentence in sentences:
-            try:
-                question = run_model(sentence)
-                qa_pairs.append({
-                    "question": question,
-                    "answer": sentence
-                })
-            except Exception as e:
-                print(f"Error generating question: {e}")
-                continue
+            if len(sentence) > 30:
+                try:
+                    question = run_model(sentence)
+                    qa_pairs.append({
+                        "question": question,
+                        "answer": sentence
+                    })
+                except Exception as e:
+                    print(f"Error generating question: {e}")
+                    continue
 
 
 qa_df = pd.DataFrame(qa_pairs)

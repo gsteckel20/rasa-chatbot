@@ -1,5 +1,5 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, udf, coalesce, lit
+from pyspark.sql.functions import col, udf, coalesce, lit, trim
 from pyspark.sql.types import StringType
 from bs4 import BeautifulSoup
 import re
@@ -42,6 +42,10 @@ def clean_text(text):
     text = re.sub(r"\s+", " ", text).strip()
 
     text = re.split(r"school of computing 415 boyd research and education center university of georgia athens, ga 30602-7404 , staff and students", text)[0]
+    text = re.split(r"click here to learn more about giving", text)[0]
+    text = re.split(r"your gift is important to us and helps support critical", text)[0]
+    text = re.split(r"support us we appreciate your financial support", text)[0]
+    text = re.split(r"news newsletter events media contact", text)[0]
     return text
 
 clean_udf = udf(clean_text, StringType())
@@ -72,6 +76,10 @@ def remove_common_prefix(text):
 remove_prefix_udf = udf(remove_common_prefix, StringType())
 
 df_cleaned = df_cleaned.withColumn("cleaned_text", remove_prefix_udf(col("cleaned_text")))
+df_cleaned = df_cleaned.filter(
+    (col("cleaned_text").isNotNull()) & (trim(col("cleaned_text")) != "")
+)
+
 
 #Select and save
 df_cleaned = df_cleaned.select(
