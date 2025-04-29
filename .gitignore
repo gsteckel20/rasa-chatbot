@@ -16,6 +16,10 @@ ENV/
 # VS Code
 .vscode/
 
+#models
+rasa/models
+rasa/.rasa/cache/
+
 # Jupyter and IPython
 .ipynb_checkpoints/
 *.ipynb
