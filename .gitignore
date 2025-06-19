@@ -9,16 +9,12 @@ __pycache__/
 
 # Virtual environments
 venv/
-env/
-ENV/
 .venv/
 
 # VS Code
 .vscode/
 
 #models
-rasa/models
-rasa/.rasa/cache/
 
 # Jupyter and IPython
 .ipynb_checkpoints/
@@ -26,6 +22,8 @@ rasa/.rasa/cache/
 
 # Scrapy
 .scrapy/
+scrapy/output/
+cleaned_data_csv/
 
 # Hugging Face Transformers cache
 ~/.cache/huggingface/

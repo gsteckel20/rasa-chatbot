@@ -1,4 +1,0 @@
-- rule: Fallback rule
-  steps:
-    - intent: nlu_fallback
-    - action: utter_default
